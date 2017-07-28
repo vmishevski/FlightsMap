@@ -1,0 +1,10 @@
+{
+  "mongoDatabase": {
+    "host": "ds125183.mlab.com",
+    "port": "25183",
+    "database": "weekend",
+    "user": "vm",
+    "password": "vm"
+  },
+  "logLevel": "debug"
+}

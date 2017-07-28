@@ -13,10 +13,21 @@ export default function (opt) {
     },
     target: 'node',
     plugins: [],
-    module: <webpack.NewModule>{
+    resolve: {
+      modules: ['node_modules'],
+      extensions: ['.js', '.ts', '.json']
+    },
+    module: <webpack.NewModule> {
       rules: [
         {test:  /\.tsx?$/, loader: 'ts-loader'}
       ]
+    },
+    node: {
+      __dirname: false,
+      __filename: false,
+      console: false,
+      process: false,
+      global: false
     }
   }
 }
